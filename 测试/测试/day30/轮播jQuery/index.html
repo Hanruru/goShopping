@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery/jquery.js"></script>
+    <script>
+        $(function(){
+            var ols=$("ol").find("li");
+            var uls=$("ul");
+            ols.on("click",function(){
+                uls.animate({top:$(this).index()*(-320)},1000);
+                $(this).siblings().attr("class","");
+                $(this).attr("class","active");
+            });
+            var index=0;
+            var lastIndex=uls.find("li").length;
+            uls.hover(function(){
+                clearInterval(timer);
+            },function(){
+                timer=setInterval(Next,1300);
+            })
+            var timer=setInterval(Next,1300);
+            function Next(){
+                uls.animate({top:index*(-320)},1000);
+                ols.eq(index).attr("class","active");
+                ols.eq(index).siblings().attr("class","");
+                index++;
+                if(index>=lastIndex){
+                    index=0;
+                }
+            }
+        })
+    </script>
+</head>
+<style>
+    *{margin: 0;padding: 0;border: 0}
+    div{
+        width: 810px;
+        height: 320px;
+        position: relative;
+        overflow: hidden;
+    }
+    li{
+        list-style: none;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    ol li{
+        float: left;
+        font-size: 30px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+    div ol{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+    ul{
+        position: absolute;
+        top: 0px;
+    }
+    .active{color: #ff0000}
+</style>
+<body>
+<div>
+    <ul>
+        <li><img src="img/001.jpg" alt=""/></li>
+        <li><img src="img/002.jpg" alt=""/></li>
+        <li><img src="img/003.jpg" alt=""/></li>
+        <li><img src="img/004.jpg" alt=""/></li>
+    </ul>
+    <ol>
+        <li class="active">●</li>
+        <li>●</li>
+        <li>●</li>
+        <li>●</li>
+    </ol>
+</div>
+</body>
+</html>

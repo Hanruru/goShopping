@@ -1,0 +1,10 @@
+登录注册页:
+1: $(".hint2").attr("class","hintWarn");
+    会导致原先的错误样式一直覆盖，添加一个新的样式用 addClass()
+2：cookie 用jquery获取checked属性,需要将其变换成普通样式再获取 var remember=$("#remember-me")[0];
+
+index主页：
+1: 轮播图两侧空白的背景需要跟随轮播图变换，而jquery没有该功能,需借助jquery-color.js插件
+2: 导入的垂直菜单列表中li不需浮动，所以不能定义全局的li浮动
+3: 立即抢购倒计时,判断抢购时间是否符合要求
+4: onscroll 不能用getElementsByClassName

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/tuBuy.css" />
+    <link href="../css/common.css" rel="stylesheet"/>
+    <link href="../css/select2.css" rel="stylesheet"/>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script type="text/javascript" src="../js/area.js"></script>
+    <script type="text/javascript" src="../js/location.js"></script>
+    <script src="../js/select2.js"></script>
+    <script src="../js/select2_locale_zh-CN.js"></script>
+    <script src="../js/tuBuy.js"></script>
+    <script src="../js/demo.js"></script>
+</head>
+<body>
+    <!-- 顶部 -->
+    <div id="index-top">
+        <div class="index-cen">
+            <!-- 顶部注册/登录 -->
+            <div class="top-login">
+                        <span>
+                            <img src="../images/index_03.jpg">
+                            您好，欢迎光临美国购物网！
+                        </span>
+                <ul class="users">
+                    <li><a href="login.html">请登录</a></li>
+                    <li>|</li>
+                    <li><a href="login.html">快速注册</a></li>
+                    <li>|</li>
+                </ul>
+                <ul class="login-right">
+                    <li class="daigou">
+                        <a href="#">填写代购单</a>
+                    </li>
+                    <li>|</li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li>|</li>
+                    <li><a href="#">English</a></li>
+                    <li>
+                        <i><img src="../images/index_09.jpg"></i>
+                        <a href="#">收藏本站</a>
+                    </li>
+                </ul>
+                <div class="my">
+                    <a href="#">我的美购</a>
+                    <i></i>
+                    <ul class="my-list">
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的代购单</a></li>
+                        <li><a href="#">我的收藏夹</a></li>
+                        <li><a href="#">我的代金卷</a></li>
+                        <li><a href="#">我的积分</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 顶部logo/search -->
+            <div class="logo-search">
+                <div class="header-logo">
+                    <a href="index.html" title="美国购物网"><img src="../images/logo78_02.png"></a>
+                </div>
+                <div class="header-search">
+                    <form method="get">
+                        <input type="text" placeholder="请输入品牌或商品名称">
+                        <a href="#">搜索</a>
+                    </form>
+                    <ul>
+                        <li><a href="#">热门搜索：</a></li>
+                        <li><a href="#" class="title_redl">百傲钙</a></li>
+                        <li><a href="#" class="title_redl">Coach新款</a></li>
+                        <li><a href="#">CK</a></li>
+                        <li><a href="#">GNC</a></li>
+                        <li><a href="#">拉夫劳伦</a></li>
+                        <li><a href="#">Michael kors</a></li>
+                    </ul>
+                </div>
+                <div class="shopping-cart">
+                    <a href="myCar.html">
+                        <img src="../images/car_03.png">
+                        我的购物车 &nbsp;&gt;
+                        <span id="selectedTotal1">0</span>
+                    </a>
+                    <div class="myCartDetial">
+                        <p>网络不好哟！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部商品分类assortment -->
+        <div id="assortment">
+            <div class="assortmentCen">
+                <ul class="assortment_l">
+                    <li class="allGoods"><a>全部商品分类</a></li>
+                    <li><a style="color: #e7bf11;" href="index.html">首页</a></li>
+                    <li><a href="myFilter.html">服装鞋类</a></li>
+                    <li><a href="myFilter.html">箱包配饰</a></li>
+                    <li><a href="myFilter.html">营养保健</a></li>
+                    <li><a href="myFilter.html">3天到货</a></li>
+                    <li class="discount"><a href="myFilter.html">折扣播报</a></li>
+                </ul>
+                <ul class="tupian_r">
+                    <li><img src="../images/index_r3_c58.jpg"></li>
+                    <li><img src="../images/index_r3_c60.jpg"></li>
+                    <li><img src="../images/index_r3_c64.jpg"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- main 主体 -->
+    <div id="main">
+        <div class="mainCen">
+            <div class="address">
+                <h2>1 地址选择</h2>
+                <div class="all_address">
+                    <div class="anyone">
+                        <div class="name"><span>张丹露</span>(收)</div>
+                        <div class="detiale">内蒙古 - 呼和浩特市 - 和林格尔县师范大学</div>
+                        <div class="iphone">15684520746</div>
+                    </div>
+                </div>
+                <div class="addAddress">
+                    <b>+</b>添加新地址
+                </div>
+                <div class="xinxi">
+                    <div><span>收货人姓名：</span><input id="newName" type="text">（请使用真实姓名，不能全部是数字/英文/包含特殊符号（括号、井号等））</div>
+                    <div><span>收货人地址：</span><div class="main">
+                            <center>
+                                <select id="loc_province" style="width:120px;">
+                                </select>
+                                <select id="loc_city" style="width:120px; margin-left: 10px">
+                                </select>
+                                <select id="loc_town" style="width:120px;margin-left: 10px">
+                                </select>
+                            </center>
+                        </div>
+                        <div style="margin-left: 85px;clear: left;"><input id="juti" type="text">(请填写详细地址，确保准确送达)</div>
+                    </div>
+                    <div><span>收货人手机：</span><input id="newIphone" type="text"></div>
+                    <input id="submit" type="button" value="提交">
+                    <i>×</i>
+                </div>
+            </div>
+            <div class="pay">
+                <h2>2 付款方式</h2>
+                <div class="morePay">
+                    <div class="payBox">
+                        <div class="payTitle">
+                            <span class="active">网银支付</span>
+                            <span>信用卡</span>
+                            <span>支付平台</span>
+                        </div>
+                        <div class="payMain" style="display: block">
+                            <div class="bank">
+                                <input type="radio" checked="" name="radio"><img src="../images/zhaoshang.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio"><img src="../images/zhongguo.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio"><img src="../images/zhaoshang.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio"><img src="../images/nonghang.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio"><img src="../images/zhaoshang.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio"><img src="../images/zhongguo.png">
+                            </div>
+                        </div>
+                        <div class="payMain">
+                            <div class="bank">
+                                <input type="radio" checked="" name="radio2"><img src="../images/nonghang.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio2"><img src="../images/zhaoshang.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio2"><img src="../images/zhongguo.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio2"><img src="../images/zhaoshang.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio2"><img src="../images/zhaoshang.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio2"><img src="../images/zhongguo.png">
+                            </div>
+                        </div>
+                        <div class="payMain">
+                            <div class="bank">
+                                <input type="radio" checked="" name="radio3" value="zhifubao"><img src="../images/zhifubao.jpg">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio3"><img src="../images/weixin.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio3"><img src="../images/zaixian.png">
+                            </div>
+                            <div class="bank">
+                                <input type="radio" name="radio3"><img src="../images/caifutong.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="myGoods">
+                <h2>3确认订单</h2>
+                <div class="myGoodsCen">
+                    <div class="catbox">
+                        <table id="cartTable">
+                            <thead>
+                            <tr>
+                                <th><label>
+                                    <input class="check-all check" type="checkbox"/>&nbsp;&nbsp;全选</label></th>
+                                <th>商品</th>
+                                <th>单价</th>
+                                <th>数量</th>
+                                <th>小计</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+                                <td class="goods"><img src="../images/good01.jpg" alt=""/><span>Childangel魔力花开唇部护理套组</span></td>
+                                <td class="price">199.00</td>
+                                <td class="count"><span class="reduce">-</span>
+                                    <input class="count-input" type="text" value="1"/>
+                                    <span class="add">+</span></td>
+                                <td class="subtotal">199.00</td>
+                                <td class="operation"><span class="delete"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+                                <td class="goods"><img src="../images/xiaotu.jpg" alt=""/><span>伊贝心语 妃黛佳人系列女式修身中长款风衣 卡其色 M</span></td>
+                                <td class="price">269.00</td>
+                                <td class="count"><span class="reduce">-</span>
+                                    <input class="count-input" type="text" value="1"/>
+                                    <span class="add">+</span></td>
+                                <td class="subtotal">269.00</td>
+                                <td class="operation"><span class="delete"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+                                <td class="goods"><img src="../images/good03.jpg" alt=""/><span>苹果/Apple iPhone7 32G 国行版全网通4G智能手机 金色</span></td>
+                                <td class="price">5388.00</td>
+                                <td class="count"><span class="reduce">-</span>
+                                    <input class="count-input" type="text" value="1"/>
+                                    <span class="add">+</span></td>
+                                <td class="subtotal">5388.00</td>
+                                <td class="operation"><span class="delete"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+                                <td class="goods"><img src="../images/good04.jpg" alt=""/><span>尼尚（Nesun）机械全自动防水夜光男士手表 金边白面钢带</span></td>
+                                <td class="price">558.00</td>
+                                <td class="count"><span class="reduce">-</span>
+                                    <input class="count-input" type="text" value="1"/>
+                                    <span class="add">+</span></td>
+                                <td class="subtotal">558.00</td>
+                                <td class="operation"><span class="delete"></span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="foot" id="foot">
+                            <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;&nbsp;全选</label>
+                            <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+                            <div class="fr closing">结 算</div>
+                            <input type="hidden" id="cartTotalPrice" />
+                            <div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+                            <div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件<span class="arrow up">︽</span><span class="arrow down">︾</span></div>
+                            <div class="selected-view">
+                                <div id="selectedViewList" class="clearfix">
+                                    <div><img src="../images/good01.jpg"><span>取消选择</span></div>
+                                </div>
+                                <span class="arrow">◆<span>◆</span></span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部  -->
+    <div id="bottom-logo">
+        <div id="bottom-cen">
+            <!-- 底部 logo 图标 -->
+            <div class="bottom-logo-cen">
+                <div class="bottom-logoList">
+                    <img src="../images/bottomLogo01.webp">
+                    <b>正品保障</b>
+                    <span>正品行货 放心选购</span>
+                </div>
+                <div class="bottom-logoList">
+                    <img src="../images/bottomLogo02.webp">
+                    <b>满68包邮</b>
+                    <span>满68元 免运费</span>
+                </div>
+                <div class="bottom-logoList">
+                    <img src="../images/bottomLogo03.webp">
+                    <b>售后无忧</b>
+                    <span>7天无理由退货</span>
+                </div>
+                <div class="bottom-logoList">
+                    <img src="../images/bottomLogo04.webp">
+                    <b>准时送达</b>
+                    <span>收货时间由你做主</span>
+                </div>
+            </div>
+            <!-- 底部 ul li 二维码 -->
+            <div class="bottom-moreList">
+                <div class="bottom-moreListL">
+                    <dl>
+                        <dt>新手入门</dt>
+                        <dd>购物流程</dd>
+                        <dd>会员制度</dd>
+                        <dd>订单查询</dd>
+                        <dd>发票制度</dd>
+                        <dd>常见问题</dd>
+                    </dl>
+                    <dl>
+                        <dt>支付方式</dt>
+                        <dd>货到付款</dd>
+                        <dd>网上支付</dd>
+                        <dd>银行转账</dd>
+                        <dd>礼品卡支付</dd>
+                        <dd>其他支付</dd>
+                    </dl>
+                    <dl>
+                        <dt>配送服务</dt>
+                        <dd>配送范围及运费</dd>
+                        <dd>配送进度查询</dd>
+                        <dd>自提服务</dd>
+                        <dd>商品验货与签收</dd>
+                    </dl>
+                    <dl>
+                        <dt>售后保障</dt>
+                        <dd>退换货政策</dd>
+                        <dd>退换货流程</dd>
+                        <dd>退款说明</dd>
+                        <dd>延保说明页面</dd>
+                        <dd>联系客服</dd>
+                    </dl>
+                    <dl>
+                        <dt>商家合作</dt>
+                        <dd>商家入驻</dd>
+                        <dd>商必赢</dd>
+                        <dd>平台规则</dd>
+                        <dd>企业采购</dd>
+                    </dl>
+                </div>
+                <div class="bottom-moreListR">
+                    <div class="erweima">
+                        <p>APP更优惠</p>
+                        <img src="../images/erweima01.webp">
+                    </div>
+                    <div class="erweima">
+                        <p>加微信查订单</p>
+                        <img src="../images/erweima02.webp">
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>
+                    <a>关于1号店</a><span>|</span>
+                    <a>我们的团队</a><span>|</span>
+                    <a>网站联盟</a><span>|</span>
+                    <a>热门搜索</a><span>|</span>
+                    <a>友情链接</a><span>|</span>
+                    <a>1号店社区</a><span>|</span>
+                    <a>诚征英才</a><span>|</span>
+                    <a>商家登录</a><span>|</span>
+                    <a>供应商登录</a><span>|</span>
+                    <a>放心搜</a><span>|</span>
+                    <a>1号店新品</a><span>|</span>
+                    <a>开放平台</a><span>|</span>
+                    <a>沃尔玛</a>
+                </p>
+                <p>
+                    <a>沪ICP备14050023号</a><span>|</span>
+                    <a>合字B1.B2-20130004</a><span>|</span>
+                    <a>营业执照</a><span>|</span>
+                    <a>互联网药品信息服务资格证</a><span>|</span>
+                    <a>互联网药品交易服务资格证</a>
+                </p>
+                <p>Copyright&copy; 1号店网上超市 2007-2016，All Rights Reserved</p>
+                <small id="footerbanner">
+                    <a><img src="../images/footer01.webp"></a>
+                    <a><img src="../images/footer02.webp"></a>
+                    <a><img src="../images/footer03.webp"></a>
+                    <a><img src="../images/footer04.webp"></a>
+                    <a><img src="../images/footer05.gif"></a>
+                    <a><img src="../images/footer06.webp"></a>
+                    <a><img src="../images/footer07.webp"></a>
+                    <a><img src="../images/footer08.jpg"></a>
+                    <a><img src="../images/footer09.webp"></a>
+                </small>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

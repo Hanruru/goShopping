@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(function(){
+            $('div.item').on('click', function(){
+                var $orgImg = $('img', this);
+                var $targetDiv = $('div.target');
+                var $fxImg = $orgImg.clone().css({
+                    'position': 'absolute',
+                    'z-index': 10000,
+                    'width': $orgImg.width(),
+                    'height': $orgImg.height(),
+                    'border-radius': '50%'
+                }).css($orgImg.offset()).appendTo('body');
+                $fxImg
+                        .animate({
+                            left: [$targetDiv.offset().left + $targetDiv.width() - $fxImg.width(), 'linear'],
+                            top: [$targetDiv.offset().top + $targetDiv.height() - $fxImg.height(), 'easeInBack']
+                        }, 600)
+                        .fadeOut(200, function () {
+                            $fxImg.detach();
+                        });
+            });
+        })
+    </script>
+</head>
+<body>
+</body>
+</html>

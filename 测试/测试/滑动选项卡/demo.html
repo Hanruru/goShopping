@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.cl{
+				clear: both;
+			}
+			.tab{
+				width: 210px;
+				height: 100px;
+				margin: 100px auto;
+				border: 1px solid #000;
+                font-size: 12px;
+			}
+			.tab .hd{
+				border-bottom: 1px solid #ccc;
+				padding: 0 15px;
+				height: 30px;
+			}
+			.tab .hd ul{
+				list-style: none;
+			}
+			.tab .hd ul li{
+				float: left;
+				width: 35px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				background-color: #ccc;
+				cursor: pointer;
+				position: relative;
+				z-index: 2;
+			}
+			.tab .hd ul li.cur{
+				border-bottom: none;
+				border-left: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+				background-color: #fff;
+				border-top: 2px solid red;
+				height: 30px;
+			}
+			.tab .bd{
+                position: relative;
+                width: 205px;
+                height: 68px;
+                overflow: hidden;
+                margin-left: 5px;
+			}
+			.tab .bd .container{
+                width: 1050px;
+                height: 68px;
+                position: absolute;
+                top: 0;
+                left: 0;
+			}
+			.tab .bd .container .info{
+				float: left;
+				width: 210px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+			}
+			.tab .bd .container .info ul{
+				list-style: none;
+				padding-top: 5px;
+				line-height: 175%;
+			}
+			.tab .bd .container .info ul li{
+                margin-right: 8px;
+			}
+            .tab .bd .container .info ul li a{
+                text-decoration: none;
+                color: #3C3C3C;
+            }
+        </style>
+        <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+        <script type="text/javascript">
+        	$(document).ready(function(){
+        		$(".tab .hd ul li").click(function(){
+        			$(".tab .bd .container").animate(
+        				{
+        					"left" : -210 * $(this).index()
+        				}
+        				,
+        				1000
+        			);
+
+        			$(this).addClass("cur").siblings().removeClass("cur");
+        		});
+        	});
+        </script>
+    </head>
+    <body>
+    	<div class="tab">
+    		<div class="hd">
+    			<ul>
+    				<li class="cur">公告</li>
+    				<li>规则</li>
+    				<li>论坛</li>
+                    <li>安全</li>
+                    <li>公益</li>
+    			</ul>
+    		</div>
+    		<div class="cl"></div>
+    		<div class="bd">
+    			<div class="container">
+    				<div class="info">
+    					<ul>
+    						<li><a href="#">天猫双11全球狂欢节正式启航 揭幕新零售时代</a></li>
+    						<li><a href="#">双11晚会嘉宾名单公布</a></li>
+                            <li><a href="#">揭秘天猫双11潮流盛典</a></li>
+    					</ul>
+    				</div>
+    				<div class="info">
+    					<ul>
+    						<li><a href="#">滥发信息规则变更解读</a></li>
+    						<li><a href="#">“潮电街”市场管理规范</a></li>
+    						<li><a href="#">“描述不符”规则变更</a></li>
+    						<li><a href="#">虚假交易相关规则变更</a></li>
+    					</ul>
+    				</div>
+    				<div class="info">
+    					<ul>
+    						<li><a href="#">农夫闯淘宝 破亿造奇迹</a></li>
+    						<li><a href="#">阿里召集益行侠</a></li>
+    						<li><a href="#">十八纸颠覆家具想象</a></li>
+    						<li><a href="#">是赚钱还是骗子</a></li>
+    					</ul>
+    				</div>
+                    <div class="info">
+                        <ul>
+                            <li><a href="#">农夫闯淘宝 破亿造奇迹</a></li>
+                            <li><a href="#">阿里召集益行侠</a></li>
+                            <li><a href="#">十八纸颠覆家具想象</a></li>
+                            <li><a href="#">是赚钱还是骗子</a></li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li><a href="#">农夫闯淘宝 破亿造奇迹</a></li>
+                            <li><a href="#">阿里召集益行侠</a></li>
+                            <li><a href="#">十八纸颠覆家具想象</a></li>
+                            <li><a href="#">是赚钱还是骗子</a></li>
+                        </ul>
+                    </div>
+    			</div>
+    		</div>
+    	</div>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .wrapper {
+            width:1000px;
+            height:2000px;
+            margin-left:auto;
+            margin-right:auto;
+            text-align: center;
+        }
+
+        .header {
+            height:150px;
+        }
+
+        #nav {
+            padding: 10px;
+            position: relative;
+            top: 0;
+            background: #375069;
+            width: 1000px;
+        }
+
+        #nav a {
+            display:inline-block;
+            margin:0 10px;
+            *display:inline;
+            color:white;
+            width: 15%;
+        }
+
+        p a {
+            margin:0 10px;
+            width: 15%;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function(){
+            menuFixed('nav');
+        }
+
+        function menuFixed(id){
+            var obj = document.getElementById(id);
+            var objHeight = obj.offsetTop;
+
+            window.onscroll = function(){
+                var obj = document.getElementById(id);
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                if(scrollTop < objHeight){
+                    obj.style.position = 'relative';
+                }else{
+                    obj.style.position = 'fixed';
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <div class="header">
+    </div>
+    <div id="nav">
+        <a href="http://proxy.mimvp.com">米扑代理</a>
+        <a href="http://apptop.mimvp.com">米扑排名</a>
+        <a href="http://domain.mimvp.com">米扑域名</a>
+        <a href="http://blog.mimvp.com">米扑博客</a>
+        <a href="http://forum.mimvp.com">米扑论坛</a>
+    </div>
+
+    <div id="content" style="text-align: left;">
+        <p>悬浮经典实例请参考：米扑代理</p>
+
+        <p>米扑代理价格表实例： </p>
+
+        <p><a href="http://proxy.mimvp.com/price.php">http://proxy.mimvp.com/price.php</a></p>
+
+        <p>悬浮经典实例请参考： 米扑代理</p>
+
+        <p>米扑代理价格表实例： </p>
+
+        <p><a href="http://proxy.mimvp.com/price.php">http://proxy.mimvp.com/price.php</a></p>
+
+        <p>悬浮经典实例请参考： 米扑代理</p>
+
+        <p>米扑代理价格表实例： </p>
+
+        <p><a href="http://proxy.mimvp.com/price.php">http://proxy.mimvp.com/price.php</a></p>
+    </div>
+
+</div>
+</body>
+</html>

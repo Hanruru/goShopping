@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/getcode.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body>
+	<div id="main">
+        <!-- 头部/logo -->
+        <div id="top">
+            <a href="index.html"><img class="logo" src="../images/logo78_02.png" style="height: 57px;"></a>
+            <img class="logo_right" src="../images/top_center.jpg">
+        </div>
+        <!-- 登录 帐号、密码 -->
+        <div id="banner">
+            <div id="message">
+                <div id="message1">
+                    <div class="message_logo">
+                        <h2>用户登录</h2>
+                        <p>还没有帐号<a id="mes_register" href="#">快速注册</a></p>
+                    </div>
+                    <input id="user" type="text" placeholder="邮箱/手机号/QQ号/昵称4-16位">
+                    <div class="hint hint1"></div> <!-- 提示信息 -->
+                    <input id="password_Lo" type="password" placeholder="密码/6-20位">
+                    <div class="hint hint2"></div>
+                    <input class="test" type="text" placeholder="输入验证码(不区分大小写)">
+                    <a id="checkcode-box">1234</a>
+                    <div class="hint hint3"></div>
+                    <input type="checkbox" id="remember-me">10天免登录
+                    <p style="margin-right: 63px;cursor: pointer">忘记密码?</p>
+                    <input id="login" type="button" value="立即登录">
+                    <div id="cooperation">
+                        <p style="width:100%;float: left;">合作网站账号登录：</p>
+                        <a class="coon1" href="#"></a>
+                        <a class="coon2" href="#"></a>
+                        <a class="coon3" href="#"></a>
+                        <a class="coon4" href="#"></a>
+                        <p>更多▼</p>
+                    </div>
+                </div>
+                <div id="message2">
+                    <div class="message_logo">
+                        <h2>用户注册</h2>
+                        <p>已有帐号<a id="mes_logo" href="#">立即登录</a></p>
+                    </div>
+                    <input id="iPhone" type="text" placeholder="请输入手机号">
+                    <div class="hint hint4"></div>
+                    <input id="shortMessage" type="text" placeholder="手机验证码">
+                    <input id="getcode" type="button" value="获取验证码">
+                    <div class="hint hint5"></div>
+                    <input id="password" type="password" placeholder="请输入密码">
+                    <div class="hint hint6"></div>
+                    <input id="rePassword" type="password" placeholder="请再次输入密码">
+                    <div class="hint hint7">密码安全级别：</div>
+                    <p style="margin-top: -28px;margin-right: 61px"><a id="pwd-level-1" class="repwd"></a><a id="pwd-level-2" class="repwd"></a><a id="pwd-level-3" class="repwd"></a></p>
+                    <input id="btnRgeister" type="button" value="立即注册"><br>
+                    <input id="check2" type="checkbox">注册即表示同意快乐购<a href="#">《用户服务协议》</a>条款
+                </div>
+            </div>
+        </div>
+        <div id="bottom">Copyright&copy; 2006-2016 happigo. All Rights Reserved 免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800 E-Mail: service@happigo.com
+            湘ICP备12000157号 信息网络传播视听节目许可证号：1810530</div>
+	</div>
+</body>
+</html>

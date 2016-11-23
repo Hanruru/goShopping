@@ -1,0 +1,185 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+}
+#main{
+    width: 1200px;
+    margin: 35px auto;
+}
+/* 头部 */
+#top{
+    width: 100%;
+    height: 57px;
+    margin-bottom: 5px;
+}
+#top .logo{
+    float: left;
+}
+#top .logo_right{
+    float: right;
+    margin-top: 20px;
+}
+/* 主题banner */
+#banner{
+    width: 1200px;
+    height: 590px;
+    background: url("../images/login_bj.jpg") no-repeat;
+    position: relative;
+}
+/* 登录和注册 */
+#message{
+    font-size: 12px;
+	position: absolute;
+    top: 53px;
+    right: 100px;
+}
+/*  登录  */
+#message1{
+    width: 363px;
+    height: 460px;
+    padding: 0 60px;
+    border: 1px solid #E5E5E5;
+    background: white;
+}
+/* 注册 */
+#message2{
+    width: 363px;
+    height: 460px;
+    padding: 0 60px;
+    background: white;
+    border: 1px solid #E5E5E5;
+    display: none;
+}
+.message_logo{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+#message p,#message2{
+    color: #8c8c8c;
+    float: right;
+}
+.message_logo h2{
+    color: #c41f3a;
+    font-size: 23px;
+    float: left;
+}
+.message_logo p{
+    line-height: 40px;
+}
+.message_logo p a,#message2 a{
+    color: #c41f3a;
+}
+#message input{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #E5E5E5;
+    vertical-align: middle;
+}
+.test,#shortMessage{
+    width: 170px !important;
+}
+#getcode{
+    width: 126px !important;
+}
+#checkcode-box,#checkcode-box2{
+    display: block;
+    width: 120px;
+    height: 39px;
+    color: #000000 !important;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+    background: #E5E5E5;
+    border: 1px solid #000000;
+    float: right;
+    margin-right: 60px;
+    cursor: pointer;
+}
+#getcode{
+    border: 1px solid #000000 !important;
+}
+.hint{
+    width: 100%;
+    height: 35px;
+    color: green;
+    line-height: 28px;
+}
+.hintWarn{
+    color: red;
+}
+#remember-me,#check2{
+    width: 13px !important;
+    height: 13px !important;
+    margin-right: 3px;
+    cursor: pointer;
+}
+#login,#btnRgeister{
+    background: #94193f;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+    outline: none;
+    cursor: pointer;
+}
+.hint7{
+    width: 50%;
+    color: gray;
+    line-height: 35px;
+    font-size: 15px;
+}
+/* 密码安全度提示 */
+#pwd-level-1,#pwd-level-2,#pwd-level-3{float:left;height:20px;width:45px;background:#fff;border:1px solid #888}
+#login:hover{
+    background: #a82045;
+}
+/* 合作伙伴 */
+#cooperation{
+    height: 50px;
+}
+#cooperation a{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("../images/sprite.png") no-repeat;
+    float: left;
+    margin:5px 7px 0 0;
+}
+#cooperation .coon1{
+    background-position: -291px -57px;
+}
+#cooperation .coon2{
+    background-position: -235px -57px;
+}
+#cooperation .coon3{
+    background-position: -179px -57px;
+}
+#cooperation .coon4{
+    background-position: -207px -57px;
+}
+#cooperation p{
+    float: left;
+    margin-top: 9px;
+    cursor: pointer;
+}
+#cooperation p:last-child:hover{
+    color: #000000;
+}
+/* 底部 */
+#bottom{
+    margin: 30px 100px;
+    text-align: center;
+    font-size: 14px;
+    color: #767074;
+}

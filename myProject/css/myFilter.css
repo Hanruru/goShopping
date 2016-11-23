@@ -1,0 +1,950 @@
+*{margin: 0;padding: 0;border: 0;}
+body,html{overflow-x: hidden;}
+a{text-decoration: none;}
+ul li{
+    list-style-type: none;
+}
+input{
+    outline: none;
+}
+#index-top{
+    width: 100%;
+    height: 147px;
+    background: url('../images/index_r1_c2.jpg');
+}
+.index-cen{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+.top-login{
+    width: 100%;
+    float: left;
+    line-height: 31px;
+    font-size: 13px;
+    color: #818080;
+}
+.top-login ul li{
+    float: left;
+}
+.top-login span{
+    width: 315px;
+    height: 31px;
+    float: left;
+}
+.top-login i{
+    width: 13px;
+    height: 13px;
+    margin-right: -4px;
+    margin-left: 10px;
+}
+.users{
+    width: 160px;
+    float: left;
+    overflow: hidden;
+}
+.users li,.login-right li{
+    color: #666;
+    padding: 0 2px;
+}
+.users a,.login-right a,.my a{
+    color: #808080;
+}
+.users a:hover,.login-right a:hover{
+    color: #cc0000;
+}
+.login-right{
+    float: right;
+}
+.login-right .daigou{
+    width: 118px;
+    height: 24px;
+    margin-top: 3px;
+    background: url('../images/in1.gif') no-repeat -95px 0px;
+    background-size: 370%;
+}
+.login-right .daigou a{
+    color: #666;
+    display: block;
+    margin-left: 36px;
+    margin-top: -4px;
+}
+.my{
+    float: right;
+    margin-right: 25px;
+    position: relative;
+}
+.my i{
+    display: inline-block;
+    width:12px;
+    height: 12px;
+    margin-left: 5px;
+    background: url('../images/in1.gif') no-repeat right -363px;
+}
+.my:hover i{
+    background: url('../images/in1.gif') no-repeat right -434px;
+}
+.my-list{
+    width: 65px;
+    border: 1px solid #CB0401;
+    background: #FFFFFF;
+    position: absolute;
+    top: 31px;
+    padding: 0 5px;
+    display: none;
+}
+.my-list li{
+    width: 100%;
+    clear: left;
+    line-height: 24px;
+}
+.my:hover .my-list{
+    display: block;
+}
+.logo-search{
+    width: 1190px;
+    height: 116px;
+    float: left;
+}
+.header-logo{
+    width: 423px;
+    height: 116px;
+    text-align: center;
+    float: left;
+}
+.header-logo a img{
+    width: 220px;
+    margin: 25px 0;
+    float: left;
+}
+.header-search{
+    width: 515px;
+    height: 116px;
+    float: left;
+}
+.header-search form{
+    width: 476px;
+    height: 26px;
+    border: 2px solid #94193f;
+    margin-top: 35px;
+    padding-left: 35px;
+    background: url('../images/index_r7_c13.jpg') no-repeat;
+}
+.header-search form input{
+    width: 380px;
+    height: 100%;
+    color: #999999;
+}
+.header-search form a{
+    color: #fff;
+    font-size: 13px;
+    padding: 6px 15px;
+    background: #94193f;
+    float: right;
+}
+.header-search ul li{
+    padding: 6px 5px 0px 5px;
+    float: left;
+}
+.header-search ul li a,.myCartDetial{
+    font-size: 13px;
+    color: #a8a8a8;
+}
+.header-search .title_redl{
+    color: #94193f;
+}
+.shopping-cart{
+    width: 252px;
+    height: 116px;
+    float: left;
+    position: relative;
+}
+.shopping-cart a{
+    display: block;
+    width: 140px;
+    height: 28px;
+    text-align: center;
+    line-height: 30px;
+    color: #666;
+    font-size: 13px;
+    border: 1px solid #dddddd;
+    margin: 0 auto;
+    margin-top: 35px;
+    background: #f9f9f9;
+    position: relative;
+}
+.shopping-cart img{
+    display: inline-block;
+    width: 16px;
+    height: 13px;
+}
+.shopping-cart span{
+    width:17px;
+    height: 14px;
+    color: #fff;
+    line-height: 14px;
+    font-weight: bold;
+    background: #94193f;
+    border-radius: 60% 60% 60% 0;
+    position: absolute;
+    right: 10px;
+    top: -7px;
+}
+.myCartDetial{
+    width: 340px;
+    text-align: center;
+    border: 1px solid #DFE0E0;
+    position: absolute;
+    top: 65px;
+    left: 54px;
+    background: #fff;
+    padding:10px 0px 10px 10px;
+    display: none;
+}
+.myCartDetial p{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    background-color: #F4F4F4;
+}
+.shopping-cart:hover .myCartDetial{
+    display: block;
+}
+#assortment{
+    width: 100%;
+    height: 33px;
+    position: relative;
+    z-index: 10;
+    background: url("../images/index_r1_c3_02.png") repeat-x;
+}
+.assortmentCen{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.assortment_l{
+    height: 33px;
+    float: left;
+}
+.assortment_l li{
+    padding:0 20px;
+    float: left;
+}
+.assortment_l a{
+    color: #fff;
+    font-size: 13px;
+    line-height: 33px;
+    font-weight: bold;
+}
+.allGoods{
+    width: 232px;
+    height: 33px;
+    padding: 0px !important;
+    margin-right: 30px;
+    background-color: #94193f;
+    text-align: center;
+}
+.assortment_l a:hover{
+    color: #e7bf11;
+}
+.allGoods a:hover,.discount a:hover{
+    color: #fff;
+}
+.discount{
+    height: 23px;
+    background: #94193f;
+    border-radius: 17px;
+    margin-top: 5px;
+    padding: 0 13px !important;
+}
+.discount a{
+    font-weight: normal;
+    line-height: 23px;
+}
+.tupian_r{
+    float: right;
+}
+.tupian_r li{
+    margin-left: 10px;
+    margin-top: 3px;
+    float: left;
+}
+
+
+/* main */
+/* 筛选 */
+#main{
+    width: 100%;
+    float: left;
+    clear: both;
+}
+.mainCen{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.location{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    color: #666666;
+    font-size: 14px;
+    float: left;
+}
+.location span{
+    padding: 0 8px;
+}
+.location a{
+    color: #666666;
+}
+.filter{
+    width: 1198px;
+    border: 1px solid #dddddd;
+    border-bottom: 0;
+    float: left;
+    color: #999;
+}
+.filter dl{
+    width: 100%;
+    float: left;
+    border-bottom: 1px dashed #dddddd;
+}
+.filter dl dt{
+    float: left;
+    width: 80px;
+    padding-right: 18px;
+    text-align: right;
+    color: #999;
+    background: #f5f5f5;
+}
+.filter .logo{
+    border-bottom: 1px solid #dddddd;
+}
+.filter .logo dt{
+    line-height: 75px;
+}
+.filter .logo dd{
+    float: left;
+}
+.filter .logo .tupian li{
+    height: 50px;
+    float: left;
+    border-right: 1px solid #dddddd;
+    margin-top: 13px;
+}
+.filter .logo .tupian li img{
+    vertical-align: middle;
+    margin-top: 3px;
+}
+.filter a{
+    float: right;
+    color: #999;
+    margin-right: 20px;
+    line-height: 69px;
+    cursor: pointer;
+}
+.filter a:hover,.filter .logo .text li:hover{
+    color: #94193f;
+}
+.filter .logo .text{
+    overflow-y:auto;
+    width: 940px;
+    height: 74px;
+    float: left;
+}
+.filter .logo .text li{
+    float: left;
+    margin: 10px 0 10px 10px;
+    cursor: pointer;
+}
+.filter .choose1{
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+}
+.filter .choose1 dd{
+    float: left;
+}
+.filter .choose1 dd span{
+    display: block;
+    float: left;
+    margin: 0 30px;
+    cursor: pointer;
+}
+.choose1 dd span{
+    position: relative;
+}
+.choose1 b{
+    font-weight: normal;
+}
+.find{
+    border: 1px solid #dddddd;
+    width: 600px;
+    height: 150px;
+    background: #ffffff;
+    padding: 0 20px;
+    position: absolute;
+    top:35px;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+.find p{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #dddddd;
+}
+.find p em{
+    display: block;
+    float: left;
+    font-style: normal;
+    margin: 0 20px;
+}
+.find .color em{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+/*
+    排序
+*/
+.mainCen .location span{
+    padding: 0 8px;
+}
+.mainCen .choose{
+    width: 1198px;
+    height: 40px;
+    font-size: 13px;
+    color: #999;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    float: left;
+    margin-top: 10px;
+}
+.choose .paixu{
+    display: block;
+    width: 86px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    background: white;
+    color: #94193f;
+    float: left;
+}
+.mainCen .choose ul{
+    float: left;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.mainCen .choose ul li{
+    width: 68px;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+}
+.choose ul li i{
+    display: inline-block;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+.choose ul li .default{
+    width: 11px;
+    height: 11px;
+    background: url("../images/icon_list.png") repeat scroll -89px -688px;
+    margin-bottom: 3px;
+}
+.choose ul li .count{
+    width: 11px;
+    height: 13px;
+    background: url("../images/icon_list.png") repeat scroll -156px -652px;
+    margin-bottom: 3px;
+}
+.choose ul li input{
+    vertical-align: middle;
+    margin: 0 3px 3px 0;
+}
+.findsum{
+    width: 200px;
+    height: 100%;
+    float: right;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/* 物品列单 */
+#yourLike{
+    width: 1225px;
+    clear: both;
+    float: left;
+}
+.yourLikeAny{
+    width: 218px;
+    height: 405px;
+    margin: 0 25px 50px 0;
+    float: left;
+    border: 1px solid #ddd;
+    border-bottom: 3px solid #CCCCCC;
+}
+.clearLikeF{
+    clear: left;
+}
+.LikeAnyImg{
+    display: block;
+    height: 330px;
+    width: 100%;
+}
+.LikeAnyImg img{
+    width: 100%;
+}
+.likeAnyText{
+    display: block;
+    width: 100%;
+    height: 67px;
+}
+.yourLikeAny p{
+    height: 22px;
+    color: #333;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.yourLikeAny a span{
+    margin-left: 5px;
+}
+.yourLikeAny a span img{
+    width: 30px;
+    height: 18px;
+    margin-right: 5px;
+}
+.yourLikeAny a h3{
+    font-size: 17px !important;
+    line-height: 30px !important;
+    font-weight: bold !important;
+    padding-left: 5px;
+}
+
+
+/* 底部 logo图标 */
+#bottom-logo{
+    clear: both;
+    width: 100%;
+    background: white;
+}
+#bottom-cen{
+    width: 1200px;
+    margin: 0 auto;
+}
+.bottom-logo-cen{
+    height: 66px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 30px 0;
+}
+.bottom-logoList{
+    width: 205px;
+    height: 66px;
+    margin: 0 45px;
+    float: left;
+    cursor: pointer;
+}
+.bottom-logoList img{
+    display: block;
+    width: 66px;
+    height: 66px;
+    margin-right: 15px;
+    float: left;
+}
+.bottom-logoList b{
+    width: 115px;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #333;
+}
+.bottom-logoList span{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #999;
+    line-height: 26px;
+}
+.bottom-moreList{
+    width: 100%;
+    height: 150px;
+    padding: 20px 0 20px;
+}
+.bottom-moreListL{
+    height: 152px;
+    width: 840px;
+    margin-left: 40px;
+    float: left;
+}
+.bottom-moreListL dl{
+    width: 168px;
+    float: left;
+    display: block;
+}
+.bottom-moreListL dl dt{
+    height: 32px;
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 32px;
+    font-family: "微软雅黑";
+    color: #666666;
+    font-weight: bold;
+}
+.bottom-moreListL dl dd{
+    height: 24px;
+    padding: 0 8px;
+    color: #666666;
+    line-height: 24px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.bottom-moreListL dl dd:hover,#footer a:hover,.findsum a{
+    color: #94193f;
+}
+.bottom-moreListR{
+    width: 304px;
+    height: 100%;
+    float: left;
+}
+.bottom-moreListR p{
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+.erweima{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+#footer{
+    width: 100%;
+    height: 142px;
+    color: #666;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#footer p{
+    line-height: 100%;
+    margin: 15px 0;
+}
+#footer a{
+    color: #666666;
+    cursor: pointer;
+}
+#footerbanner{
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+}
+#footerbanner a{
+    display: inline-block;
+}
+
+
+/* 右侧导航  */
+#right{
+    width: 40px;
+    height: 100%;
+    min-height: 600px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 27px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #444851;
+    z-index: 50;
+    bottom: auto;
+}
+#rightCen{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}
+.rightTop{
+    width: 100%;
+    height: 360px;
+    position: absolute;
+    top: 50%;
+    margin-top: -270px;
+    right: 0;
+    z-index: 20;
+}
+.top1{
+    position: relative;
+    z-index: 30;
+}
+.top1 a,.top2 a,.top3 a,.bot1 a,.bot2 a,.bot3 a{
+    display: block;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.userimg{
+    display: block;
+    width: 30px;
+    height: 23px;
+    margin: 0;
+    background: url("../images/icon_list.png") no-repeat -190px -413px;
+}
+.line1{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #2d2e32;
+    margin-top: 15px;
+}
+.line2{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #575a62;
+    margin-bottom: 15px;
+}
+.carimg{
+    width: 40px;
+    height: 25px;
+    display: block;
+    background: url(../images/icon_list.png) -76px 0;
+    transform: scale(0.95);
+    text-align: center;
+}
+.top2 a span{
+    writing-mode:tb-rl;
+    letter-spacing: 8px;
+    margin-top: 5px;
+    color: #ffffff;
+}
+.carnum{
+    width: 22px;
+    height: 22px;
+    color: #fff;
+    background: url(../images/icon_list.png) -84px -65px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0px 9px 0 9px;
+}
+.shou{
+    width: 22px;
+    height: 21px;
+    display: block;
+    background: url(../images/icon_list.png) -83px -188px;
+    margin: 0 9px;
+}
+.rightBot{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+.bot1{
+    position: relative;
+}
+.ewm{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../images/icon_list.png) -170px 0;
+    margin: 10px;
+    position: relative;
+}
+.erweimapo{
+    position: absolute;
+    right: 39px;
+    bottom: -40px;
+}
+.bot2{
+    margin: 10px 0;
+}
+.service{
+    width: 22px;
+    height: 32px;
+    display: block;
+    background: url(../images/icon_list.png) -170px -58px;
+    margin: 5px 3px 5px 8px;
+}
+.top1 a:hover,.top2 a:hover,.top3:hover,.bot1 a:hover,.bot2 a:hover,.bot3 a:hover{
+    background: #94193f;
+}
+.userho{
+    width: 289px;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    position: absolute;
+    right: 40px;
+    top: -10px;
+    display: none;
+}
+.userho .close{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    background: url(../images/icon_list.png) no-repeat 0 -686px;
+    cursor: pointer;
+}
+.userho .login .logintop{
+    height: 99px;
+    color: #838383;
+    margin: 0 5px;
+    padding: 55px 0 9px;
+    text-align: center;
+}
+.login .logintop .limg{
+    width: 60px;
+    height: 60px;
+    float: left;
+    position: relative;
+    left: 110px;
+}
+.login .logintop .limg img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.login .logintop .limg .guan{
+    display: block;
+    width: 45px;
+    height: 36px;
+    position: absolute;
+    left: -6px;
+    bottom: 44px;
+}
+.login .logintop .limg .tou{
+    display: block;
+    margin: 5px 0;
+}
+.login .logintop .lname{
+    width: 100%;
+    color: #999999;
+    padding-top: 7px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.loginbot{
+    border-top: 1px solid #dce1e6;
+    padding: 16px 0 10px 0;
+    overflow: hidden;
+    background-color: #fbfcfd;
+    color: #999999;
+}
+.loginbot_l{
+    border-right: 1px solid #ebeef1;
+    float: left;
+    padding: 5px 0;
+    width: 50%;
+}
+.loginbot span{
+    display: block;
+    width: 100%;
+    margin-top: -15px;
+}
+.loginbot_l a b{
+    display: inline-block;
+    width: 25px;
+    height: 33px;
+    background: url(../images/dfw.png) no-repeat 0 0;
+}
+.loginbot_l a:hover b{
+    background: url(../images/dfw.png) no-repeat -55px 0;
+}
+.loginbot_l a:hover span,.loginbot_r a:hover span{
+    color: #94193f;
+}
+.loginbot_r{
+    float: left;
+    width: 49%;
+}
+.loginbot_r a b{
+    display: inline-block;
+    width: 30px;
+    height: 39px;
+    background: url(../images/dfw.png) no-repeat 0 -58px;
+}
+.loginbot_r a:hover b{
+    background: url(../images/dfw.png) no-repeat -53px -58px;
+}
+.loginbot a:hover{
+    background: none;
+}
+.ewmho{
+    width: 173px;
+    height: 271px;
+    border-radius: 5px;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+}
+.jiao{
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    right: -8px;
+    bottom: 51px;
+    z-index: 55;
+    background: url(../images/icon_list.png) no-repeat -3px -585px;
+}
+.serviceho{
+    position: absolute;
+    right: 39px;
+    bottom: 0px;
+    display: none;
+}
+.serviceho .serCen{
+    width: 240px;
+    color: #444851;
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    padding-bottom: 15px;
+}
+.serviceho .serCen .title{
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    cursor: default;
+}
+.serviceho .serCen .text{
+    background-color: #fbfcfd;
+    width: 100%;
+    overflow: hidden;
+    padding: 5px 0 8px 0;
+}
+.serviceho .serCen .text a{
+    width: 120px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    padding: 0;
+    float: left;
+    line-height: 25px;
+    color: #444851;
+}
+.serviceho .serCen .text a:hover,.logintop .lname:hover{
+    background: #ffffff;
+    color: #94193f;
+    text-decoration: underline;
+}
+.gotop{
+    width: 19px;
+    height: 19px;
+    display: block;
+    background: url(../images/icon_list.png) -83px -252px;
+    margin: 5px 10px;
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/myStyle.css" />
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/myStyle.js"></script>
+</head>
+<body>
+    <!-- 顶部 -->
+    <div id="index-top">
+        <div class="index-cen">
+            <!-- 顶部注册/登录 -->
+            <div class="top-login">
+                    <span>
+                        <img src="../images/index_03.jpg">
+                        您好，欢迎光临美国购物网！
+                    </span>
+                <ul class="users">
+                    <li><a href="login.html">请登录</a></li>
+                    <li>|</li>
+                    <li><a href="login.html">快速注册</a></li>
+                    <li>|</li>
+                </ul>
+                <ul class="login-right">
+                    <li class="daigou">
+                        <a href="#">填写代购单</a>
+                    </li>
+                    <li>|</li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li>|</li>
+                    <li><a href="#">English</a></li>
+                    <li>
+                        <i><img src="../images/index_09.jpg"></i>
+                        <a href="#">收藏本站</a>
+                    </li>
+                </ul>
+                <div class="my">
+                    <a href="#">我的美购</a>
+                    <i></i>
+                    <ul class="my-list">
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的代购单</a></li>
+                        <li><a href="#">我的收藏夹</a></li>
+                        <li><a href="#">我的代金卷</a></li>
+                        <li><a href="#">我的积分</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 顶部logo/search -->
+            <div class="logo-search">
+                <div class="header-logo">
+                    <a href="#" title="美国购物网"><img src="../images/logo78_02.png"></a>
+                </div>
+                <div class="header-search">
+                    <form method="get">
+                        <input type="text" placeholder="请输入品牌或商品名称">
+                        <a href="#">搜索</a>
+                    </form>
+                    <ul>
+                        <li><a href="#">热门搜索：</a></li>
+                        <li><a href="#" class="title_redl">百傲钙</a></li>
+                        <li><a href="#" class="title_redl">Coach新款</a></li>
+                        <li><a href="#">CK</a></li>
+                        <li><a href="#">GNC</a></li>
+                        <li><a href="#">拉夫劳伦</a></li>
+                        <li><a href="#">Michael kors</a></li>
+                    </ul>
+                </div>
+                <div class="shopping-cart">
+                    <a href="myCar.html">
+                        <img src="../images/car_03.png">
+                        我的购物车 &nbsp;&gt;
+                        <span>0</span>
+                    </a>
+                    <div class="myCartDetial">
+                        <p>网络不好哟！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部商品分类assortment -->
+        <div id="assortment">
+            <div class="assortmentCen">
+                <ul class="assortment_l">
+                    <li class="allGoods"><a href="#">全部商品分类</a></li>
+                    <li><a style="color: #e7bf11;" href="index.html">首页</a></li>
+                    <li><a href="#">服装鞋类</a></li>
+                    <li><a href="#">箱包配饰</a></li>
+                    <li><a href="#">营养保健</a></li>
+                    <li><a href="#">3天到货</a></li>
+                    <li class="discount"><a href="#">折扣播报</a></li>
+                </ul>
+                <ul class="tupian_r">
+                    <li><img src="../images/index_r3_c58.jpg"></li>
+                    <li><img src="../images/index_r3_c60.jpg"></li>
+                    <li><img src="../images/index_r3_c64.jpg"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- main 主题 -->
+    <div id="main">
+        <div class="mainCen">
+            <div class="location">
+                <a href="#">首页</a><span>&gt;</span><span>搜索结果&nbsp;<a href="#"> "风衣"</a></span>
+            </div>
+            <div class="choose">
+                <span class="paixu">排序：</span>
+                <ul>
+                    <li>默认<i class="default"></i></li>
+                    <li>销量<i class="count"></i></li>
+                    <li>价格<i class="count"></i></li>
+                    <li style="color: #94193f;"><input type="checkbox">电视热销</li>
+                </ul>
+                <div class="findsum">共搜索到<a>0</a>个商品</div>
+            </div>
+
+            <!-- 物品列单 -->
+            <div id="yourLike">
+                <div class="yourLikeAny">
+                    <a href="#" class="LikeAnyImg"><img src="../images/like01.webp"></a>
+                    <a class="likeAnyText">
+                        <p>【杨幂同款】真皮韩版铆钉钉珠印花乐福鞋</p>
+                        <span><img src="../images/new.png"><img src="../images/remai.png"></span>
+                        <h3>&yen;96.6</h3>
+                    </a>
+                </div>
+                <div class="yourLikeAny">
+                    <a href="#" class="LikeAnyImg"><img src="../images/like02.webp"></a>
+                    <a class="likeAnyText">
+                        <p>男士马丁靴冬季加绒真皮靴子英伦男靴短靴雪地靴保暖男鞋棉鞋棉靴</p>
+                        <span><img src="../images/new.png"><img src="../images/remai.png"></span>
+                        <h3>&yen;99.4</h3>
+                    </a>
+                </div>
+                <div class="yourLikeAny">
+                    <a href="type.html" class="LikeAnyImg"><img src="../images/like03.webp"></a>
+                    <a class="likeAnyText">
+                        <p>韩版中长款斗篷毛呢外套+黑色弹力小脚裤铅笔裤时尚套装</p>
+                        <span><img src="../images/new.png"><img src="../images/remai.png"></span>
+                        <h3>&yen;36.6</h3>
+                    </a>
+                </div>
+                <div class="yourLikeAny">
+                    <a href="#" class="LikeAnyImg"><img src="../images/like04.webp"></a>
+                    <a class="likeAnyText">
+                        <p>冬季毛毛鞋学生豆豆鞋雪地靴平跟加绒休闲鞋棉鞋短靴兔毛耳朵单鞋</p>
+                        <span><img src="../images/new.png"><img src="../images/remai.png"></span>
+                        <h3>&yen;56.6</h3>
+                    </a>
+                </div>
+                <div class="yourLikeAny">
+                    <a href="#" class="LikeAnyImg"><img src="../images/like05.webp"></a>
+                    <a class="likeAnyText">
+                        <p>JDWM秋冬新款纯色呢大衣情侣毛呢外套 情侣装 </p>
+                        <span><img src="../images/new.png"><img src="../images/remai.png"></span>
+                        <h3>&yen;179.2</h3>
+                    </a>
+                </div>
+                <div class="yourLikeAny" style="clear: left;">
+                    <a href="#" class="LikeAnyImg"><img src="../images/like01.webp"></a>
+                    <a class="likeAnyText">
+                        <p>【杨幂同款】真皮韩版铆钉钉珠印花乐福鞋</p>
+                        <span><img src="../images/new.png"><img src="../images/remai.png"></span>
+                        <h3>&yen;96.6</h3>
+                    </a>
+                </div>
+                <div class="yourLikeAny">
+                    <a href="#" class="LikeAnyImg"><img src="../images/like02.webp"></a>
+                    <a class="likeAnyText">
+                        <p>男士马丁靴冬季加绒真皮靴子英伦男靴短靴雪地靴保暖男鞋棉鞋棉靴</p>
+                        <span><img src="../images/new.png"><img src="../images/remai.png"></span>
+                        <h3>&yen;99.4</h3>
+                    </a>
+                </div>
+                <div class="yourLikeAny">
+                    <a href="#" class="LikeAnyImg"><img src="../images/like03.webp"></a>
+                    <a class="likeAnyText">
+                        <p>韩版中长款斗篷毛呢外套+黑色弹力小脚裤铅笔裤时尚套装</p>
+                        <span><img src="../images/new.png"><img src="../images/remai.png"></span>
+                        <h3>&yen;36.6</h3>
+                    </a>
+                </div>
+                <div class="yourLikeAny">
+                    <a href="#" class="LikeAnyImg"><img src="../images/like04.webp"></a>
+                    <a class="likeAnyText">
+                        <p>冬季毛毛鞋学生豆豆鞋雪地靴平跟加绒休闲鞋棉鞋短靴兔毛耳朵单鞋</p>
+                        <span><img src="../images/new.png"><img src="../images/remai.png"></span>
+                        <h3>&yen;56.6</h3>
+                    </a>
+                </div>
+                <div class="yourLikeAny">
+                    <a href="#" class="LikeAnyImg"><img src="../images/like05.webp"></a>
+                    <a class="likeAnyText">
+                        <p>JDWM秋冬新款纯色呢大衣情侣毛呢外套 情侣装 </p>
+                        <span><img src="../images/new.png"><img src="../images/remai.png"></span>
+                        <h3>&yen;179.2</h3>
+                    </a>
+                </div>
+            </div>
+            <div id="addmore"><input class="ui-button ui-widget ui-corner-all" type="submit" value="加载更多···"></div>
+
+        </div>
+    </div>
+
+    <!-- 底部  -->
+    <div id="bottom-logo">
+        <div id="bottom-cen">
+            <!-- 底部 logo 图标 -->
+            <div class="bottom-logo-cen">
+                <div class="bottom-logoList">
+                    <img src="../images/bottomLogo01.webp">
+                    <b>正品保障</b>
+                    <span>正品行货 放心选购</span>
+                </div>
+                <div class="bottom-logoList">
+                    <img src="../images/bottomLogo02.webp">
+                    <b>满68包邮</b>
+                    <span>满68元 免运费</span>
+                </div>
+                <div class="bottom-logoList">
+                    <img src="../images/bottomLogo03.webp">
+                    <b>售后无忧</b>
+                    <span>7天无理由退货</span>
+                </div>
+                <div class="bottom-logoList">
+                    <img src="../images/bottomLogo04.webp">
+                    <b>准时送达</b>
+                    <span>收货时间由你做主</span>
+                </div>
+            </div>
+            <!-- 底部 ul li 二维码 -->
+            <div class="bottom-moreList">
+                <div class="bottom-moreListL">
+                    <dl>
+                        <dt>新手入门</dt>
+                        <dd>购物流程</dd>
+                        <dd>会员制度</dd>
+                        <dd>订单查询</dd>
+                        <dd>发票制度</dd>
+                        <dd>常见问题</dd>
+                    </dl>
+                    <dl>
+                        <dt>支付方式</dt>
+                        <dd>货到付款</dd>
+                        <dd>网上支付</dd>
+                        <dd>银行转账</dd>
+                        <dd>礼品卡支付</dd>
+                        <dd>其他支付</dd>
+                    </dl>
+                    <dl>
+                        <dt>配送服务</dt>
+                        <dd>配送范围及运费</dd>
+                        <dd>配送进度查询</dd>
+                        <dd>自提服务</dd>
+                        <dd>商品验货与签收</dd>
+                    </dl>
+                    <dl>
+                        <dt>售后保障</dt>
+                        <dd>退换货政策</dd>
+                        <dd>退换货流程</dd>
+                        <dd>退款说明</dd>
+                        <dd>延保说明页面</dd>
+                        <dd>联系客服</dd>
+                    </dl>
+                    <dl>
+                        <dt>商家合作</dt>
+                        <dd>商家入驻</dd>
+                        <dd>商必赢</dd>
+                        <dd>平台规则</dd>
+                        <dd>企业采购</dd>
+                    </dl>
+                </div>
+                <div class="bottom-moreListR">
+                    <div class="erweima">
+                        <p>APP更优惠</p>
+                        <img src="../images/erweima01.webp">
+                    </div>
+                    <div class="erweima">
+                        <p>加微信查订单</p>
+                        <img src="../images/erweima02.webp">
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>
+                    <a>关于1号店</a><span>|</span>
+                    <a>我们的团队</a><span>|</span>
+                    <a>网站联盟</a><span>|</span>
+                    <a>热门搜索</a><span>|</span>
+                    <a>友情链接</a><span>|</span>
+                    <a>1号店社区</a><span>|</span>
+                    <a>诚征英才</a><span>|</span>
+                    <a>商家登录</a><span>|</span>
+                    <a>供应商登录</a><span>|</span>
+                    <a>放心搜</a><span>|</span>
+                    <a>1号店新品</a><span>|</span>
+                    <a>开放平台</a><span>|</span>
+                    <a>沃尔玛</a>
+                </p>
+                <p>
+                    <a>沪ICP备14050023号</a><span>|</span>
+                    <a>合字B1.B2-20130004</a><span>|</span>
+                    <a>营业执照</a><span>|</span>
+                    <a>互联网药品信息服务资格证</a><span>|</span>
+                    <a>互联网药品交易服务资格证</a>
+                </p>
+                <p>Copyright&copy; 1号店网上超市 2007-2016，All Rights Reserved</p>
+                <small id="footerbanner">
+                    <a><img src="../images/footer01.webp"></a>
+                    <a><img src="../images/footer02.webp"></a>
+                    <a><img src="../images/footer03.webp"></a>
+                    <a><img src="../images/footer04.webp"></a>
+                    <a><img src="../images/footer05.gif"></a>
+                    <a><img src="../images/footer06.webp"></a>
+                    <a><img src="../images/footer07.webp"></a>
+                    <a><img src="../images/footer08.jpg"></a>
+                    <a><img src="../images/footer09.webp"></a>
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧导航 -->
+    <div id="right">
+        <div id="rightCen">
+            <div class="rightTop">
+                <div class="top1">
+                    <a>
+                        <i class="userimg"></i>
+                        <span>帐号</span>
+                    </a>
+                    <div>
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                    </div>
+                    <div class="userho">
+                        <!-- 关闭 -->
+                        <div class="close"></div>
+                        <div class="login">
+                            <div class="logintop">
+                                <div class="limg">
+                                    <img class="guan" src="../images/guan.png">
+                                    <img class="tou" src="../images/tou.jpg">
+                                </div>
+                                <div class="lname">请登录</div>
+                            </div>
+                            <div class="loginbot">
+                                <div class="loginbot_l">
+                                    <a>
+                                        <b></b>
+                                        <span>我的订单</span>
+                                    </a>
+                                </div>
+                                <div class="loginbot_r">
+                                    <a>
+                                        <b></b>
+                                        <span>我的优惠卷</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top2">
+                    <a href="myCar.html">
+                        <i class="carimg"></i>
+                        <span>购物车</span>
+                        <div class="carnum">0</div>
+                    </a>
+                    <div>
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                    </div>
+                </div>
+                <div class="top3">
+                    <a>
+                        <i class="shou"></i>
+                        <span>收藏</span>
+                    </a>
+                </div>
+            </div>
+            <div class="rightBot">
+                <div class="bot1">
+                    <a>
+                        <div class="ewm"></div>
+                    </a>
+                    <div class="erweimapo">
+                        <div class="ewmho">
+                            <div class="jiao"></div>
+                            <img src="../images/ewm.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="bot2">
+                    <a>
+                        <div class="service"></div>
+                    </a>
+                    <div class="serviceho">
+                        <div class="serCen">
+                            <p class="title">订单服务</p>
+                            <p class="text">
+                                <a>商品咨询</a>
+                                <a>优惠/政策咨询</a>
+                                <a>订单支付</a>
+                                <a>配送查询</a>
+                                <a>订单查询</a>
+                            </p>
+                            <p class="title">售后服务</p>
+                            <p class="text">
+                                <a>退款查询</a>
+                                <a>取消/退换货</a>
+                                <a>售后处理</a>
+                                <a>投诉建议</a>
+                            </p>
+                            <p class="title">账户服务</p>
+                            <p class="text">
+                                <a>账号咨询</a>
+                                <a>密码找回</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bot3">
+                    <a>
+                        <div class="gotop"></div>
+                        <span>TOP</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

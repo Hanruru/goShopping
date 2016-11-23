@@ -1,0 +1,19 @@
+﻿
+1: $(".hint2").attr("class","hintWarn");
+    会导致原先的错误样式一直覆盖，添加一个新的样式用 addClass()
+2：cookie 用jquery获取checked属性,需要将其变换成普通样式再获取 var remember=$("#remember-me")[0];
+3: 轮播图两侧空白的背景需要跟随轮播图变换，而jquery没有该功能,需借助jquery-color.js插件
+4: 导入的垂直菜单列表中li不需浮动，所以不能定义全局的li浮动
+5: 立即抢购倒计时,判断抢购时间是否符合要求
+6: onscroll 不能用getElementsByClassName
+7: jquery-color.js和jquery-1.7.2.min.js两个插件顺序的相互影响导致banner背景颜色无法实现
+8: cookie的删除，在不关闭该网页的情况下刷新会出现 1TueNov08201611:48:11GMT+0800(ä¸­å½æåæ¶é´)
+    cookie 的组成
+    cookie 由名/值对形式的文本组成：name=value。完整格式为：
+    user = lify;pwd=123456;
+    name=value; [expires=date]; [path=path]; [domain=somewhere.com]; [secure]
+    中括号是可选，name=value 是必选。
+9: index首页banner轮播opacity超出1 ？？？？
+10: 在一个网页出现多个相同动画的轮播，出现彼此相互影响现象，利用面向对象思维解决
+
+

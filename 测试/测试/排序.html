@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.js" ></script>
+    <script type="text/javascript">
+        //递增
+        var asc = function(a, b) {
+            return $(a).find('input').val() > $(b).find('input').val() ? 1 : -1;
+        }
+        //递减
+        var desc = function(a, b) {
+            return $(a).find('input').val() > $(b).find('input').val() ? -1 : 1;
+        }
+
+        var sortByInput = function(sortBy) {
+            var sortEle = $('.container>div').sort(sortBy);
+            $('.container').empty().append(sortEle);
+        }
+    </script>
+</head>
+<body>
+<div class='container'>
+    <div id='1'>
+        <div class='name'>bbbb</div>
+        <div class='number'><input type='text' value='110'></div>
+    </div>
+    <div id='2'>
+        <div class='name'>cccc</div>
+        <div class='number'><input type='text' value='120'></div>
+    </div>
+    <div id='3'>
+        <div class='name'>dddd</div>
+        <div class='number'><input type='text' value='140'></div>
+    </div>
+</div>
+</body>
+</html>

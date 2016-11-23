@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            width: 230px;
+            height: 478px;
+            border: 1px solid #000;
+            position: absolute;
+            top: 0;
+            background: rgba(0,0,0,0.8);
+            margin-top: 50px;
+        }
+        .nav ul{
+            list-style: none;
+        }
+        .nav ul li{
+            line-height: 30px;
+            padding-left: 20px;
+            position: relative;
+            z-index: 8;
+        }
+        .nav ul li a{
+            font-family: "Arial";
+            padding-right:20px;
+            color: #fff8df;
+        }
+        .nav ul li .zicaidan{
+            position: absolute;
+            left:220px;
+            top: -20px;
+            width: 550px;
+            height: 350px;
+            border: 1px solid #000;
+            background: -webkit-gradient(linear, 0% 0%, 100% 0%,from(#ffffff), to(rgba(255,255,255,0.8)));
+            box-shadow: 0px 0px 2px black;
+            display: none;
+            padding: 10px 30px;
+            font-family:"微软雅黑";
+            font-size: 14px;
+        }
+        .nav ul li .zicaidan p{
+            width: 70px;
+            height: 24px;
+            background: rgba(0,0,0,0.8);
+            float: left;
+            margin-right: 20px;
+            padding-left: 8px;
+        }
+        .nav ul li .zicaidan p b{
+            float: left;
+            line-height: 24px;
+            font-weight: normal;
+            color: #fff8df;
+            cursor: pointer;
+        }
+        .nav ul li .zicaidan i{
+            width: 22px;
+            height: 24px;
+            display: inline-table;
+            float: right;
+            background: url('../images/xuebibg.png') no-repeat;
+            background-position: -316px 0px;
+        }
+        .more-detial{
+            clear: both;
+        }
+        .more-detial h4{
+            color: #896701;
+        }
+        .more-detial a{
+            color: #2e2e30 !important;
+            font-family: "微软雅黑" !important;
+            padding-right: 0 !important;
+        }
+        .more-detial span{
+            color: #cdcdcd;
+            margin: 0 10px;
+        }
+        .nav ul li.cur{
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            box-shadow: 0px 0px 2px black;
+        }
+        .nav ul li s{
+            position: absolute;
+            right: 5px;
+            top:0px;
+            width: 10px;
+            height: 30px;
+            background-color: white;
+            z-index: 10;
+            display: none;
+        }
+    </style>
+    <!--<script src="../二维码/jquery.二维码"></script>-->
+    <script>
+        $(document).ready(
+                function(){
+                    $(".nav ul li").mouseenter(function(){
+                        $(this).addClass("cur");
+                        $(this).children(".zicaidan").show();
+                        $(this).children("s").show();
+                    });
+
+                    $(".nav ul li").mouseleave(function(){
+                        $(this).removeClass("cur");
+                        $(this).children(".zicaidan").hide();
+                        $(this).children("s").hide();
+                    });
+                }
+        );
+    </script>
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li>
+            <i class="icon_bg01"></i>
+            <a href="#">男装</a>
+            <a href="#">女装</a>
+            <s></s>
+            <div class="zicaidan" style="display: block">
+                <p><b>男装</b><i></i></p>
+                <p><b>女装</b><i></i></p>
+                <div class="more-detial">
+                    <h4>男装</h4>
+                    <a>背心/马甲</a><span>|</span><a>衬衫</a><span>|</span><a>风衣</a><span>|</span><a>工装制服</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <i class="icon_bg02"></i>
+            <a href="#">男鞋</a>
+            <a href="#">女鞋</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg03"></i>
+            <a href="#">运动</a>
+            <a href="#">户外</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg04"></i>
+            <a href="#">珠宝</a>
+            <a href="#">饰品</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg05"></i>
+            <a href="#">美妆</a>
+            <a href="#">洗护</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg06"></i>
+            <a href="#">母婴</a>
+            <a href="#">玩具</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg07"></i>
+            <a href="#">家局</a>
+            <a href="#">设计</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg08"></i>
+            <a href="#">食品</a>
+            <a href="#">百货</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg09"></i>
+            <a href="#">家电</a>
+            <a href="#">电器</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg010"></i>
+            <a href="#">游戏</a>
+            <a href="#">图书</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg11"></i>
+            <a href="#">数码</a>
+            <a href="#">办公设备</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg12"></i>
+            <a href="#">汽车用品</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg13"></i>
+            <a href="#">产品</a>
+            <a href="#">产品</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg14"></i>
+            <a href="#">产品</a>
+            <a href="#">产品</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+        <li>
+            <i class="icon_bg15"></i>
+            <a href="#">产品</a>
+            <a href="#">产品</a>
+            <s></s>
+            <div class="zicaidan"></div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
